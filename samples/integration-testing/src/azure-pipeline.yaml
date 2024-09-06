@@ -34,7 +34,7 @@ stages:
           #   displayName: 'Install Terraform'
           #   inputs:
           #     terraformVersion: $(terraformVersion)
-          - task: TerraformInstaller@1
+          - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller #TerraformInstaller@1
             displayName: install terraform
             inputs:
               terraformVersion: $(terraformVersion)
